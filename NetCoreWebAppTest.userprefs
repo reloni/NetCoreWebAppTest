@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{161DC05D-8E58-4DAC-AEE8-7C80EB5BE318}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppSettings.json">
+    <Files>
+      <File FileName="Program.cs" Line="17" Column="1" />
+      <File FileName="Controller.cs" Line="29" Column="1" />
+      <File FileName="DatabaseContext.cs" Line="20" Column="18" />
+      <File FileName="Startup.cs" Line="29" Column="55" />
+      <File FileName="AppSettings.json" Line="13" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.NetCoreWebAppTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
