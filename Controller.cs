@@ -26,8 +26,22 @@ namespace ConsoleApplication
 
 		public JsonResult Users()
 		{
-			var count = repo.Users().Count();
 			return Json(repo.Users().Select(o => new { Id = o.Id, FirstName = o.FirstName, LastName = o.LastName, EMail = o.Email }));
+		}
+
+		public JsonResult Todos()
+		{
+			return Json(repo.context.Todos.ToList());
+		}
+
+		public JsonResult CreateTodo(string descr)
+		{
+			var newId = repo.TodoCount() + 1;
+			var user = repo.Users().Last();
+			var todo = new Todo() { Description = descr, Id = newId, User = user };
+			repo.context.Todos.Add(todo);
+			repo.context.SaveChanges();
+			return Json(todo);
 		}
     }
 }

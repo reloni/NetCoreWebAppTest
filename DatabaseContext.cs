@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,7 +8,7 @@ namespace NetCoreWebAppTest
 {
 	public class Repository
 	{
-		DatabaseContext context { get; set; }
+		internal DatabaseContext context { get; set; }
 
 		public Repository(DatabaseContext context)
 		{
@@ -18,6 +19,11 @@ namespace NetCoreWebAppTest
 		{
 			//return new DatabaseContext(new DbContextOptions<DatabaseContext>()).Users;
 			return context.Users;
+		}
+
+		public int TodoCount()
+		{
+			return context.Todos.Count();
 		}
 	}
 
@@ -55,9 +61,11 @@ namespace NetCoreWebAppTest
 	{
 		[Column("id")]
 		public int Id { get; set; }
-		[Column("Description")]
+		[Column("description")]
 		public string Description { get; set; }
-		[Column("UserId")]
-		public User UserId { get; set; }
+		//[Column("userid")]
+		//public int UserId { get; set; }
+		[ForeignKey("userid")]
+		public User User { get; set; }
 	}
 }
