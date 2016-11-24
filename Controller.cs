@@ -45,6 +45,16 @@ namespace ConsoleApplication
 			return Json(new { Error = "Don't see header :(" });
 		}
 
+		public JsonResult CheckContext()
+		{
+			if (HttpContext.Items["authorized"] as String == "yes!")
+			{
+				return Json(new { IsAuthorized = true });
+			}
+
+			return Json(new { Error = "Can't read context" });
+		}
+
 		public JsonResult CreateTodo(string descr)
 		{
 			var newId = repo.TodoCount() + 1;

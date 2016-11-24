@@ -46,6 +46,8 @@ namespace ConsoleApplication
 				app.UseDeveloperExceptionPage();
 			}
 
+			app.UseMiddleware<HeaderCheckMiddleware>();
+
 			app.UseMvc(routes =>
 		   {
 			   routes.MapRoute(

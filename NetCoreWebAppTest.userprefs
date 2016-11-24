@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{0ACD8A68-C354-4BB9-B565-BEAA083800BE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HeaderCheckMiddleware.cs">
     <Files>
-      <File FileName="Startup.cs" Line="57" Column="2" />
+      <File FileName="Startup.cs" Line="46" Column="1" />
       <File FileName="AppSettings.json" Line="1" Column="1" />
-      <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="Controller.cs" Line="37" Column="4" />
+      <File FileName="Program.cs" Line="17" Column="1" />
+      <File FileName="Controller.cs" Line="50" Column="32" />
+      <File FileName="HeaderCheckMiddleware.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.NetCoreWebAppTest PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/AntonEfimenko/Documents/Programming/Todoist clone/NetCoreWebAppTest/Startup.cs" relfile="Startup.cs" line="46" column="1" />
+      <Breakpoint file="/Users/AntonEfimenko/Documents/Programming/Todoist clone/NetCoreWebAppTest/Controller.cs" relfile="Controller.cs" line="39" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
