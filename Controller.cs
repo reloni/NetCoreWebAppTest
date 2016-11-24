@@ -34,6 +34,17 @@ namespace ConsoleApplication
 			return Json(repo.context.Todos.ToList());
 		}
 
+		public JsonResult ReadHeader()
+		{
+			var val = Request.Headers["testheader"].FirstOrDefault();
+			if (!String.IsNullOrEmpty(val))
+			{
+				return Json(new { YourHeaderValue = val });
+			}
+
+			return Json(new { Error = "Don't see header :(" });
+		}
+
 		public JsonResult CreateTodo(string descr)
 		{
 			var newId = repo.TodoCount() + 1;

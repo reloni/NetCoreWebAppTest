@@ -31,7 +31,7 @@ namespace ConsoleApplication
 
         //public void Configure(IApplicationBuilder app)
         //{
-        //    app.UseMvc(routes =>
+		//    app.UseMvc(routes =>
         //    {
         //        routes.MapRoute(
         //        name: "default",
@@ -41,10 +41,10 @@ namespace ConsoleApplication
 
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
 		{
-			//if (env.IsDevelopment())
-			//{
+			if (env.IsDevelopment())
+			{
 				app.UseDeveloperExceptionPage();
-			//}
+			}
 
 			app.UseMvc(routes =>
 		   {
